@@ -11,4 +11,18 @@ public class Ball : MonoBehaviour
            other.GetComponentInParent<Platform>().Break();
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.TryGetComponent(out EnemyPlatform enemyPlatform))
+        {
+            BallTracking.instance().RestartGame.SetActive(true);
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("finish"))
+        {
+            BallTracking.instance().RestartGame.SetActive(true);
+        }
+    }
 }

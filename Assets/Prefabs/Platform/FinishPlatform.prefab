@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4586338669461267115}
   m_Layer: 0
   m_Name: Arch
-  m_TagString: Untagged
+  m_TagString: finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6088,7 +6088,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 9d257d5ffd39e88478d4c4745bab233d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6203,3 +6203,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a307132e116ebfa4cb75a9f72c893d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bounceForce: 0
+  _bounceRadius: 0
